@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>显示系统时间</title>
+	</head>
+
+	<body>
+		<p></p>
+		<script>
+			window.onload = function() {
+				showTime();
+
+				function checkTime(i) {
+					if (i < 10) {
+						i = "0" + i;
+					}
+					return i;
+				}
+
+				function showTime() {
+					var para = document.getElementsByTagName("p")[0],
+						myDate = new Date(),
+						Year = myDate.getFullYear(),
+						month = myDate.getMonth() + 1,
+						day = myDate.getDate(),
+						d = myDate.getDay(),
+						h = myDate.getHours(),
+						m = myDate.getMinutes(),
+						s = myDate.getSeconds(),
+						dArray = new Array(7);
+					dArray[0] = "星期日";
+					dArray[1] = "星期一";
+					dArray[2] = "星期二";
+					dArray[3] = "星期三";
+					dArray[4] = "星期四";
+					dArray[5] = "星期五";
+					dArray[6] = "星期六";
+					h = checkTime(h);
+					m = checkTime(m);
+					s = checkTime(s);
+					para.innerHTML = Year + "年" + month + "月" + day + "日" + dArray[d] + h + ":" + m + ":" + s;
+					setTimeout(showTime, 500);
+				}
+			}
+		</script>
+	</body>
+
+</html>

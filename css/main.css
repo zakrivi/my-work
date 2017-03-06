@@ -1,0 +1,113 @@
+body {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	padding-top: 60px;
+	background-color: #fff;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header {
+	width: 100%;
+	height: 60px;
+	background-color: #666;
+	position: fixed;
+	top: 0;
+}
+
+#header ul {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#header ul li {
+	float: left;
+	width: auto;
+	height: 60px;
+	position: relative;
+	
+}
+#header li a {
+	display: block;
+	padding: 18px 30px;
+	text-decoration: none;
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: all 1s ease;
+}
+
+#header li:hover a {
+	color: #666;
+	background-color: #ddd;
+}
+
+
+
+.Middle {
+	width: 70%;
+	margin: 0 auto;
+}
+.Middle>h2,
+.Middle h3 {
+	float: left;
+}
+
+.Middle>div {
+	width: 750px;
+	float: right;
+}
+
+.Middle>div>div {
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+.Middle>div>div>div {
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+
+.Middle i{
+	width: 180px;
+	font-size: 0.8em;
+	display: block;
+	float: right;
+	font-style: normal;
+}
+/*
+.Middle>div>div>span {
+	font-style: oblique;
+}*/
+
+.Middle p {
+	float: left;
+	width: 550px;
+}
+
+
+#about,#resume,#works,#contact{
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	overflow: hidden;
+	//border-top:100px solid transparent ;
+	padding-top: 130px;
+	padding-bottom: 50px;
+	margin-top: -60px;
+	
+}
+#about{
+	text-indent: 30px;
+}
+#contact h1{
+	width: 100px;
+	margin: 30px auto;
+	text-align: center;
+}
+#contact form{
+	width: 500px;
+	margin: 0 auto;
+}

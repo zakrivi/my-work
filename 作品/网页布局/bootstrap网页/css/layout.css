@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#head {
+	width: 960px;
+	height: 360px;
+	margin: 10px auto 0;
+}
+
+#head img {
+	width: 540px;
+	height: 360px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#navigation {
+	width: 960px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#navigation ul {
+	width: 800px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#navigation li {
+	display: block;
+	float: left;
+	width: 158px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+#content {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#content h1 {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#content p {
+	margin: 0 70px 0 70px;
+}
+
+
+
+
+/*img {
+	height: 300px;
+	width: 250px;
+	margin: 30px;
+	border: 1px solid gainsboro;
+}*/
+
+#img1{
+	position: absolute;
+	border-width: 0;
+	outline-width: 0;
+	
+}
+#wrapimg {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	overflow: hidden;
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>task2</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				background: #DEDEDE;
+			}
+			
+			p,
+			li {
+				font-size: 16px;
+				line-height: 30px;
+			}
+			
+			img {
+				margin: 10px 0;
+			}
+			
+			#header {
+				width: 100%;
+				height: 50px;
+				background: url(img/task2-1.png) left top no-repeat;
+				background-color: #333;
+			}
+			
+			#header ul {
+				height: 50px;
+				float: right;
+			}
+			
+			#header ul li {
+				float: left;
+				list-style-type: none;
+				height: 50px;
+				line-height: 70px;
+				margin-right: 40px;
+			}
+			
+			#header ul li a:hover,
+			#header ul li a:link,
+			#header ul li a:active,
+			#header ul li a:visited {
+				color: #fff;
+				text-decoration: none;
+			}
+			
+			#left {
+				float: left;
+				width: 60%;
+				padding: 20px;
+			}
+			
+			#main-1,
+			#main-2,
+			#main-3,
+			#main-4,
+			#main-5 {
+				background: #fff;
+				border-right: 2px solid #848484;
+				border-bottom: 2px solid #848484;
+				box-shadow: 2px 2px 2px #848484;
+				padding: 30px;
+				margin-bottom: 40px;
+				
+			}
+			#main-3{
+				overflow: auto;
+			}
+			#main-3 img {
+				width: 100px;
+			}
+			#main-3 p {
+				width: 110px;
+				padding: 10px;
+				border: 1px solid #eee;
+				text-align: center;
+				margin: 10px;
+				float: left;
+			}
+			
+			
+		
+			#main-4 ol {
+				margin-left: 40px;
+			}
+			
+			#main-4 table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 0 auto;
+			}
+			
+			#main-4 table tr {
+				height: 20px;
+			}
+			
+			#main-4 table th {
+				color: #fff;
+				background: #333;
+			}
+			
+			#main-4 th,
+			#main-4 td {
+				text-align: left;
+				border: 1px solid #eee;
+			}
+			
+			#main-4 table tr:last-child {
+				background-color: #ddd;
+			}
+			
+			#main-5 {
+				width: 360px;
+				float: right;
+				margin-top:20px;
+				margin-right: 40px;
+			}
+			
+			#main-5 p:first-child {
+				padding-left: 10px;
+				border-left: 2px solid #ddd;
+			}
+			
+			#main-5 div {
+				font-size: 14px;
+				margin: 15px 0;
+			}
+			
+			#main-5 label {
+				display: inline-block;
+				width: 130px;
+				text-align: right;
+				margin-right: 10px;
+			}
+			
+			#main-5 form p {
+				width: 150px;
+				text-align: right;
+				margin-left: 140px;
+				font-size: 12px;
+				color: #555;
+			}
+			
+			#main-5 textarea {
+				vertical-align: top;
+				width: 200px;
+				height: 100px;
+			}
+			
+			#main5-submit {
+				width: 400px;
+				height: 40px;
+				color: #fff;
+				background-color: blue;
+				border-radius: 10px;
+				margin-left: -20px;
+			}
+			
+			#footer {
+				width: 100%;
+				height: 100px;
+				background: #333333;
+				text-align: center;
+				color: #fff;
+				clear: both;
+			}
+			
+			#footer p {
+				line-height: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="header">
+			<ul>
+				<li>
+					<a href="#">导航链接一</a>
+				</li>
+				<li>
+					<a href="#">导航链接二</a>
+				</li>
+				<li>
+					<a href="#">导航链接三</a>
+				</li>
+				<li>
+					<a href="#">导航链接四</a>
+				</li>
+			</ul>
+		</div>
+		<div id="left">
+			<div id="main-1">
+				<h2>文章二级标题</h2>
+				<p>文章作者 文章发表时间</p>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落</p>
+				<br/>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落<br/></p>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落,
+					<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这里有个<strong>粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.</p>
+				<img src="img/task1-1.png" />
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这里有个<strong>粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，
+					<a href="http://ife.baidu.com" target="_blank"> 这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.</p>
+			</div>
+			<div id="main-2">
+				<h1>另一篇文章一级标题</h1>
+				<h2>文章二级标题</h2>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.</p>
+				<br/>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落,
+					<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这里有个<strong>粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.</p>
+				<img src="img/task1-1.png" />
+				<ul>
+					<li>列表项目一</li>
+					<li>列表项目二</li>
+					<li>列表项目三</li>
+				</ul>
+			</div>
+			<div id="main-3">
+				<h3>图片</h3>
+				<p>好看的图片
+					<img src="img/task1-1.png" /></p>
+				<p>好看的图片
+					<img src="img/task1-1.png" /></p>
+				<p>好看的图片
+					<img src="img/task1-1.png" /></p>
+				<p>好看的图片
+					<img src="img/task1-1.png" /></p>
+				<p>好看的图片
+					<img src="img/task1-1.png" /></p>
+				<p>好看的图片
+					<img src="img/task1-1.png" /></p>
+				<p>好看的图片
+					<img src="img/task1-1.png" /></p>
+			</div>
+			<div id="main-4">
+				<h1>最后一篇文章一级标题</h1>
+				<h2>文章二级标题</h2>
+				<p>文章作者 文章发表时间</p>
+				<ol>
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+				<p>下面是一个表格，给表格加了一个border=“1” 好让你看出是一个表格</p>
+				<table>
+					<tr>
+						<th>表头</th>
+						<th>表头</th>
+						<th>表头</th>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td>
+							<a href="#">操作</a>
+						</td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td>
+							<a href="#">操作</a>
+						</td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td>
+							<a href="#">操作</a>
+						</td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td>
+							<a href="#">操作</a>
+						</td>
+					</tr>
+					<tr>
+						<td>总计</td>
+						<td colspan="2">1000</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="main-5">
+			<p>这里以后是一个侧栏，这是侧栏的标题</p>
+			<form>
+				<div>
+					<label>请输入邮箱地址：</label><input type="text" placeholder="这是一个文本输入框">
+					<p>邮箱地址请按要求格式输入</p>
+				</div>
+				<div><label>请输入密码：</label><input type="text" placeholder="这是一个文本输入框">
+				</div>
+				<div><label>请重复输入密码：</label><input type="text" placeholder="这是一个文本输入框">
+					<p>密码请为6-16位英文数字</p>
+				</div>
+				<div><label>性别:</label><input type="radio" name="sex" value="男">男 <input type="radio" name="sex" value="女">女<br/>
+				</div>
+				<div><label> 城市：</label>
+					<select>
+						<option selected="selected">北京</option>
+						<option>南宁</option>
+						<option>桂林</option>
+						<option>柳州</option>
+					</select>
+				</div>
+				<div>
+					<label>爱好:</label><input type="checkbox" value="运动" />运动<input type="checkbox" value="艺术" />艺术<input type="checkbox" value="科学" />科学 <br/>
+				</div>
+				<div><label>个人描述：</label><textarea>这是一个多行输入框，输入您的个人描述</textarea><br/>
+				</div>
+				<div><input id="main5-submit" type="submit" value="确认提交" /></div>
+			</form>
+		</div>
+		<div id="footer">
+			<p>版权所有</p>
+		</div>
+
+	</body>
+
+</html>

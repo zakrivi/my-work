@@ -1,0 +1,49 @@
+body {
+	background-image: url(../img/img19.jpg);
+}
+
+#head {
+	border: 1px dotted #131313;
+	border-bottom: none;
+	background-color: #000;
+}
+
+#navigation {
+	background-image: url(../img/u=3303131947,659087142&fm=21&gp=0.jpg);
+}
+
+#navigation ul {
+	border-left: 1px solid #1b1b1b;
+	border-right: 1px solid #1b1b1b;
+}
+
+#navigation li {
+	border-left: 1px solid #1b1b1b;
+	border-right: 1px solid #1b1b1b;
+}
+
+#navigation a {
+	text-decoration: none;
+	color: #bababa;
+}
+
+#navigation a:hover {
+	opacity: 0.8;
+}
+
+#navigation a.here:link,
+#navigation a.here:visited,
+#navigation a.here:hover,
+#navigation a.here:active {
+	color: #eef;
+	background-color: #141414;
+}
+
+#content {
+	background-color: #fdfdfd;
+}
+
+#content a {
+	text-decoration: none;
+	color: #1c163c;
+}

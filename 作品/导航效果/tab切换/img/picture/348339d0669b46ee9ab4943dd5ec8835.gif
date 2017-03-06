@@ -1,0 +1,29 @@
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+        <head>
+        	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        	<title>Error: 服务异常稍后再试</title>
+        	<style>
+                #main{width:500;margin:auto;}
+                #header{position: relative;background:#c52f24;margin:20px 0 5px 0;
+                padding:5px;color:#fff;height:30px;
+                font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;}
+                .code{font-size:14px;line-height:16px;font-weight:bold;font-family: "Courier New", Courier, mono;}
+                .lnk{text-decoration: underline;color:#009;	cursor: pointer;}
+        	</style>
+        </head>
+
+        <body>
+            <div id="main">
+                <div id="header">
+                    <span style="float:left;">服务异常稍后再试</span>
+                    <span style="float:right;font-size:10px">Tue, 28 Jun 16 11:40:36 +0800</span>
+                </div>
+                <br class="clear" />
+                <div>
+                
+                </div>
+            </div>
+        </body>
+        </html>

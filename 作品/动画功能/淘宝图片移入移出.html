@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝动画</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#move {
+				width: 300px;
+				height: 180px;
+				border: 1px solid red;
+				padding: 25px 0 0 16px;
+				background: #eee;
+			}
+			
+			#move a {
+				display: inline-block;
+				width: 70px;
+				height: 30px;
+				border: 1px solid #aaa;
+				font-size: 12px;
+				text-decoration: none;
+				text-align: center;
+				margin: 10px 10px;
+				padding-top: 30px;
+				padding-bottom: 5px;
+				position: relative;
+				line-height: 30px;
+				overflow: hidden;
+				background: #fff;
+				color: #111;
+			}
+			
+			#move a i {
+				display: inline-block;
+				position: absolute;
+				left: 22px;
+				top: 10px;
+				text-align: center;
+			}
+			
+			#move a p:hover {
+				color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="move">
+			<a href="#"><i><img src="img/lottery.png"></i><p>彩票</p></a>
+			<a href="#"><i><img src="img/movie.png"></i><p>电影</p></a>
+			<a href="#"><i><img src="img/travel.png"></i><p>旅游</p></a>
+			<a href="#"><i><img src="img/insurance.png"></i><p>保险</p></a>
+			<a href="#"><i><img src="img/game.png"></i><p>游戏</p></a>
+			<a href="#"><i><img src="img/food.png"></i><p>外卖</p></a>
+			<script src="js/starMove.js" type="text/javascript"></script>
+			<script src="js/getStyle.js" type="text/javascript"></script>
+			
+			<script>
+				window.onload = function() {
+					var move = document.getElementById("move");
+					var aList = move.getElementsByTagName("a");
+					for (var i = 0; i < aList.length; i++) {
+						aList[i].onmouseenter = function() {
+							var _this = this.getElementsByTagName("i")[0];
+							startMove(_this,{top:-20,opacity:0},function(){
+								_this.style.top=20+"px";
+								startMove(_this,{top:10,opacity:100});
+							})
+						}
+					}
+				}
+			</script>
+
+			<!--<script src="scripts/jquery-3.0.0.js" type="text/javascript"></script>
+			<script>
+				$(function() {
+					$("#move a").mouseenter(function() {
+						$(this).find("i").animate({
+							top: "-20px",
+							opacity: "0"
+						}, 30, function() {
+							$(this).css("top", "20px");
+							$(this).animate({
+								top: "10px",
+								opacity: "1"
+							},30)
+						})
+					})
+				})
+			</script>-->
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,75 @@
+#mainLeft {
+	width: 260px;
+	height: 1210px;
+	background-color: #2a2e3d;
+	float: left;
+}
+
+#mainLeft .username {
+	color: #fff;
+	font-size: 16px;
+	font-family: "黑体";
+	width: 124px;
+	height: 58px;
+	text-align: right;
+	line-height: 58px;
+	background: url(../img/task_1_9left1.png) left center no-repeat;
+	margin: 18px 0 0 45px;
+}
+
+.personalAtats {
+	padding-top: 24px;
+	width: 120px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.personalAtats div {
+	width: 54px;
+	height: 30px;
+	font-family: "黑体";
+	color: #6e8095;
+	float: left;
+}
+
+.personalAtats .personalAtatsLeft{
+	border-right: 1px solid #313545;
+}
+
+.personalAtats .personalAtatsRight{
+	border-left: 1px solid #313545;
+	text-align: right;
+}
+.personalLists{
+	width: 215px;
+	margin: 22px 0 0 45px;
+}
+.personalLists ul li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #6b7c91;
+}
+.personalLists .list1 >li{
+	padding-left: 24px;
+}
+.personalLists .list1 >li:first-child{
+	background:url(../img/task_1_9left02.png) left  top 10px no-repeat ;
+	color: #fff;
+	height: 190px;
+}
+.personalLists .list1-1 >li{
+	padding-left: 32px;
+	background: url(../img/task_1_9left03.png)left 15px top 10px no-repeat ,url(../img/task_1_9left04.png)left top 10px no-repeat;
+}
+.personalLists .list1-1-1{
+	height:90px;
+	
+}
+.personalLists .list1-1-1 li{
+	padding-left: 15px;
+	background: url(../img/task_1_9left05.png) left center no-repeat;
+}
+.personalLists li{
+	background:url(../img/task_1_9left06.png)left center no-repeat ;
+}

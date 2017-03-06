@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>task1-10</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border: 1px solid #ccc;
+				flex: none;
+			}
+			
+			.container>div {
+				padding: 20px;
+			}
+			
+			.item1 {
+				width: 150px;
+				height: 120px;
+				border: 1px solid red;
+			}
+			
+			.item2 {
+				width: 150px;
+				height: 100px;
+				border: 1px solid red;
+			}
+			
+			.item3 {
+				width: 150px;
+				height: 40px;
+				border: 1px solid red;
+			}
+			
+			.item4 {
+				width: 150px;
+				height: 200px;
+				border: 1px solid blue;
+			}
+			
+			@media (max-width:640px) {
+				.container {
+					flex-wrap: wrap;
+					align-items: flex-start;
+					justify-content: space-between;
+				}
+				.item4 {
+					order: -1;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="item1">1</div>
+			<div class="item2">2</div>
+			<div class="item3">3</div>
+			<div class="item4">4</div>
+		</div>
+	</body>
+
+</html>

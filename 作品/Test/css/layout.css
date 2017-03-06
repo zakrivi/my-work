@@ -1,0 +1,31 @@
+body{
+	font-family:"Helvetica","Arial",serif;
+	color:#333;
+	background-color:#ccc;
+	margin:1em 10%;
+}
+h1{
+	color:#333;
+	background-color:transparent;
+}
+a{
+	color:#c60;
+	background-color:transparent;
+	font-weight:bold;
+	text-decoration:none;
+}
+ul{
+	padding:0;
+}
+li{
+	float:left;
+	padding:1em;
+	list-style:none;
+}
+img{
+	display:block;
+	clear:both;
+}
+#imagegallery li{
+display:inline;
+}//跟左浮动有点像,把块状元素改为行内元素,即取消掉换行元素,会横排放在一起,差不多功能,这里就重复了.

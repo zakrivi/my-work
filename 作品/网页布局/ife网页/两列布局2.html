@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>task6</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+			body{
+				background: #938E8C;
+			}
+			#body {
+				width: 980px;
+				height: 1386px;
+				background-color: #fff;
+				margin: 0 auto;
+			}
+			
+			#header,
+			#footer,
+			#main-top,
+			#main-mid,
+			#main-bottom {
+				width: 892px;
+				margin: 0 auto;
+			}
+			
+			#header {
+				height: 61px;
+				border-bottom: 2px solid #938e8c;
+			}
+			
+			#header span:first-child {
+				display: inline-block;
+				width: 105px;
+				height: 61px;
+				background-color: #d45d5c;
+				color: #fff;
+				line-height: 100px;
+				padding-left: 5px;
+			}
+			
+			#header span:last-child {
+				display: inline-block;
+				color: #d45d5c;
+				width: 50px;
+				height: 61px;
+				line-height: 100px;
+				text-align: right;
+				float: right;
+			}
+			/*顶部结束,开始正文部分*/
+			
+			#main-top {
+				margin-top: 30px;
+			}
+			
+			#main-top img {
+				width: 641px;
+				height: 301px;
+			}
+			
+			#main-top-right {
+				width: 203px;
+				height: 301px;
+				border-top: 2px solid #cc8091;
+				float: right;
+				padding-top: 5px;
+			}
+			
+			#main-top-right h1 {
+				font-size: 18px;
+				color: #000;
+				font-weight: normal;
+				display: inline-block;
+				border-bottom: 2px solid #000;
+			}
+			
+			#main-top-right h1 span {
+				font-size: 24px;
+			}
+			
+			#main-top-right .first-p {
+				font-family: "楷体";
+				color: #676767;
+				padding-top: 5px;
+				font-style: oblique;
+			}
+			
+			#main-top-right i {
+				color: #75b86b;
+				font-size: 116px;
+				font-style: normal;
+			}
+			
+			#main-top-right div {
+				margin-top: -15px;
+			}
+			
+			#main-top-right div p {
+				color: #cc8091;
+				position: relative;
+			}
+			
+			#main-top-right div p:first-child {
+				width: 80px;
+				float: left;
+				font-size: 55px;
+			}
+			
+			#main-top-right div p:last-child {
+				width: 50px;
+				font-size: 21px;
+				float: left;
+				line-height: 80px;
+			}
+			
+			#main-top-right div p:last-child span {
+				position: absolute;
+				top: 15px;
+				left: 0;
+				color: #ccc;
+			}
+			/*正文中间部分*/
+			
+			#main-mid {
+				margin-top: 20px;
+				position: relative;
+			}
+			
+			#main-mid .para h2 {
+				color: #d2994f;
+				font-size: 16px;
+				text-decoration: underline;
+				line-height: 40px;
+			}
+			
+			#main-mid .para:first-child h2 {
+				color: green;
+			}
+			
+			#main-mid .para:last-child h2 {
+				color: red;
+			}
+			
+			#main-mid .para {
+				max-width: 23%;
+				min-height: 200px;
+				min-width: 100px;
+				margin-right: 20px;
+				float: left;
+			}
+			
+			#main-mid .para p {
+				font-size: 12px;
+				color: #231815;
+				line-height: 16px;
+				filter: alpha(opacity=70);
+				opacity: 0.7;
+			}
+			
+			#main-mid #number {
+				line-height: 16px;
+				position: absolute;
+				right: 350px;
+				top: 120px;
+			}
+			
+			#main-mid #number span {
+				color: #cd4a48;
+				filter: alpha(opaticy=70);
+				opacity: 0.7;
+			}
+			/*正文最后一部分*/
+			#main-bottom{
+				overflow: hidden;
+			}
+			#main-bottom #bot-left {
+				width: 415px;
+				float: left;
+			}
+			
+			#bot-left-top {
+				border-bottom: 2px solid #111;
+				padding-bottom: 10px;
+				margin-bottom: 20px;
+			}
+			
+			#bot-left-top h1 {
+				color: #11456B;
+				font-family: "黑体";
+				font-size: 42px;
+			}
+			
+			#bot-left-top h1 span {
+				color: #f5e327;
+				font-size: 72px;
+				font-style: oblique;
+			}
+			
+			#bot-left-top h1:last-child {
+				font-size: 33px;
+			}
+			
+			#bot-left-bot p span {
+				color: #F5E327;
+				font-size: 70px;
+				display: inline-block;
+				float: left;
+				width: 76px;
+				height: 46px;
+				margin-top: 30px;
+			}
+			
+			#bot-left-bot p {
+				padding-top: 10px;
+				color: #767777;
+				font-family: "宋体";
+				line-height: 16px;
+			}
+			
+			#bot-left-bot img {
+				width: 167px;
+				height: 288px;
+				float: right;
+				margin: 15px;
+			}
+			
+			#bot-right {
+				width: 458px;
+				float: right;
+				margin-top: 20px;
+				position: relative;
+			}
+			
+			#bot-right i {
+				width: 100%;
+				color: #72b16a;
+				height: 61px;
+				position: absolute;
+				top: 213px;
+				background-color: #888481;
+				line-height: 50px;
+			}
+			
+			#bot-right i span {
+				color: #fff;
+				font-size: 26px;
+				line-height: 44px;
+				display: inline-block;
+				height: 44px;
+				margin: 8px 0 0 30px;
+				padding: 0 10px 0 10px;
+				border-left: 3px solid #72b16a;
+				font-style: normal;
+			}
+			
+			#bot-right>div {
+				width: 419px;
+				height: 318px;
+				background-color: #eeeed6;
+				margin-top: 30px;
+				padding: 20px 0 0 40px;
+			}
+			
+			#bot-right div ul li {
+				font-size: 16px;
+				font-family: "宋体";
+				padding: 10px;
+				list-style: none;
+			}
+			
+			#bot-right .div-red {
+				width: 260px;
+				height: 160px;
+				background-color: #D45D5C;
+				margin: 44px 0 0 -40px;
+				color: #fff;
+				float: left;
+			}
+			
+			#bot-right .div-red p:first-child {
+				width: 70px;
+				height: 86px;
+				font-size: 110px;
+				line-height: 86px;
+				border-right: 2px solid #fff;
+				float: left;
+				margin: 40px 5px 0 5px;
+			}
+			
+			#bot-right .p-1 {
+				float: left;
+				font-size: 21px;
+				margin-top: 40px;
+			}
+			
+			#bot-right .p-2 {
+				float: left;
+				width: 150px;
+				line-height: 16px;
+				margin: 0px 0 0 5px;
+			}
+			
+			#bot-right div:last-child>p:last-child {
+				width: 180px;
+				float: right;
+				padding-top: 60px;
+			}
+			
+			.p-img1 {
+				float: left;
+				margin: -10px 5px 0 0;
+			}
+			
+			.p-img2 {
+				float: right;
+				margin: 10px 5px 0 0;
+			}
+			
+			#footer {
+				clear: both;
+				height: 50px;
+				border-top: 1px solid #938e8c;
+				color: #D45D5C;
+				margin-top: 50px;
+			}
+			
+			#footer p {
+				float: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="body">
+		<div id="header">
+			<span>ife.baidu.com</span>
+			<span>2016.03</span>
+		</div>
+		<div id="main-top">
+			<img src="img/task6-leftbigimg.jpg" />
+			<div id="main-top-right">
+				<h1><span>A</span>BOUT</h1><br/>
+				<h1><span>T</span>ECHNOLOGE</h1>
+				<p class="first-p">
+					About technologe about technologe<br/> about technologe
+				</p>
+				<i>700</i>
+				<div>
+					<p>3.2</p>
+					<p>css<span>csssccsccscssc</span></p>
+				</div>
+			</div>
+		</div>
+		<div id="main-mid">
+			<div class="para">
+				<h2>What</h2>
+				<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			</div>
+			<div class="para">
+				<h2>When</h2>
+				<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			</div>
+			<div class="para">
+				<h2>How</h2>
+				<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			</div>
+			<div id="number">
+				<p>What------<span>40%</span></p>
+				<p>What------<span>30%</span></p>
+				<p>What------<span>30%</span></p>
+			</div>
+		</div>
+		<div id="main-bottom">
+			<div id="bot-left">
+				<div id="bot-left-top">
+					<h1><span>THE</span> TECHNOLOGE<br/>OF FRONT</h1>
+					<h1>前端技术领域</h1>
+				</div>
+				<div id="bot-left-bot">
+					<p><span>前</span>端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端<img src="img/task6-leftbot.jpg" />前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+
+				</div>
+			</div>
+			<div id="bot-right">
+				<img src="img/task6-right.jpg" />
+				<i><span>前端技术</span>前端技术前端技术</i>
+				<div>
+					<ul>
+						<li>前端前端前端..........前端</li>
+						<li>前端前端前端..........前端</li>
+						<li>前端前端前端..........前端</li>
+					</ul>
+					<div class="div-red">
+						<p>0</p>
+						<p class="p-1">ONE TWO<br/>THREE FORE FIVE</p>
+						<p class="p-2">hello world hello world hello world</p>
+					</div>
+					<p><img class="p-img1" src="img/task6-rightred1.png" /><img class="p-img1" src="img/task6-rightred1.png" /> world hello world hello world hello world hello world hello world hello world hello world<img src="img/task6-rightred2.png" class="p-img2" /> <img class="p-img2" src="img/task6-rightred2.png" /> </p>
+				</div>
+			</div>
+
+		</div>
+		<div id="footer">
+			<p>ife.baidu.com</p>
+		</div>
+		</div>
+	</body>
+
+</html>
